@@ -7,13 +7,13 @@ public class Operation {
      * @return
      */
     public static int add(int a, int b){
-        int c;
+        int c = a;
         while (b != 0) {
             c = a ^ b;
             b = (a & b)<<1;
             a = c;
         }
-        return a;
+        return c;
     }
 
     public static void main(String[] args) {
